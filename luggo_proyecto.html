@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Proyecto</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+
+  <style>
+    body {
+        background-color: white !important;
+        background-image: none !important;
+    }
+
+    .title__proyectos {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .texto-proyecto {
+        text-align: center !important;
+        max-width: 800px;       
+        margin: 0 auto !important;
+        display: block;
+        line-height: 1.2;
+        
+        font-size: 20px !important; 
+        
+        padding-bottom: 50px;    
+    }
+
+    .carousel_container {
+     
+        border: 1px solid black; 
+        
+        padding: 50px;           
+        
+        margin: 0 auto 50px auto; 
+        max-width: 1150px;      
+        box-sizing: border-box;
+    }
+
+    @media screen and (max-width: 768px) {
+        .carousel_container {
+            padding: 20px;   
+            border: none;     
+        }
+    }
+
+</style>
+
+</head>
+
+
+<body>
+    
+    <nav id="desktop-nav">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                [ Bàrbara Folch Blasco ]
+            </a>
+        </div>
+        
+        <div>
+            <ul class="nav-links">
+                <li><a href="index.html#aboutme">Sobre mí</a></li>
+                <li><a href="index.html#projects">Proyectos</a></li>
+                <li><a href="index.html#experience">Experiencia | Educación</a></li>
+                <li><a href="index.html#contact">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+
+    <nav id="hamburger-nav">
+        <div class="logo">
+            <a href="index.html" style="text-decoration: none; color: inherit;">
+                [ Bàrbara Folch Blasco ]
+            </a>
+        </div>
+        
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="menu-links">
+                <li><a href="index.html#aboutme" onclick="toggleMenu()">Sobre mí</a></li>
+                <li><a href="index.html#projects" onclick="toggleMenu()">Proyectos</a></li>
+                <li><a href="index.html#experience" onclick="toggleMenu()">Experiencia</a></li>
+                <li><a href="index.html#contact" onclick="toggleMenu()">Contacto</a></li>
+            </div>
+        </div>
+    </nav>
+
+        <nav id="hamburger-nav">
+            <div class="logo">[ Bàrbara Folch Blasco ]</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <div class="menu-links">
+                    <li><a href="./index.html#aboutme" onclick="toggleMenu()">Sobre mí</a></li>
+                    <li><a href="./index.html#projects" onclick="toggleMenu()">Proyectos</a></li>
+                    <li><a href="./index.html#experience" onclick="toggleMenu()">Experiencia</a></li>
+                    <li><a href="./index.html#contact" onclick="toggleMenu()">Contacto</a></li>
+                </div>
+            </div>
+        </nav>
+
+        <div class="separador"></div>
+
+        <body class="body-proyecto">
+
+                <br> <br> <br> <br> 
+
+                <h1 class="title__proyectos">Luggo</h1>
+            
+                <p class="texto-proyecto">
+                    Terra es una aplicación diseñada para ofrecer diferentes productos
+                    orgánicos, facilitando la conexión directa entre vendedores locales
+                    y clientes. Su propósito es fomentar el comercio de proximidad, la
+                    sostenibilidad y la economía circular.
+                </p>
+
+                <div class="carousel_container">
+
+                    <div class="carousel">
+                        
+                        <input type="radio" name="slides" checked="checked" id="slide-1">
+                        <input type="radio" name="slides" id="slide-2">
+                        <input type="radio" name="slides" id="slide-3">
+                        <input type="radio" name="slides" id="slide-4">
+                        <input type="radio" name="slides" id="slide-5">
+                        <input type="radio" name="slides" id="slide-6">
+
+                        <ul class="carousel__slides">
+
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="./assets/Luggo/Luggo Screens.png" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Lorem Ipsum</span>
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="./assets/Terra/Phones.jpg" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Lorem Ipsum</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1044/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Steve Carter</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1045/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Aleksandra Boguslawska</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+                            
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1049/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Rosan Harmens</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                            <li class="carousel__slide">
+                                <figure>
+                                    <div>
+                                        <img src="https://picsum.photos/id/1052/800/450" alt="">
+                                    </div>
+                                    <figcaption>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        <span class="credit">Photo: Annie Spratt</span>                            
+                                    </figcaption>
+                                </figure>
+                            </li>
+
+                        </ul>    
+
+                        <ul class="carousel__thumbnails">
+                            <li>
+                                <label for="slide-1"><img src="./assets/Luggo/Luggo Screens.png" alt=""></label>
+                            </li>
+
+                            <li>
+                                <label for="slide-2"><img src="./assets/Terra/Phones.jpg" alt=""></label>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+
+        <br> <br> <br> <br> 
+
+        <footer class="footer">
+                <div class="footer-contenido">
+
+                    <div class="footer-mensaje">
+
+                        <p>— Portfolio Web hecho con amor ❤️ — </p>
+                        <p>&copy; 2025 Bàrbara Folch Blasco. Todos los derechos reservados.</p>
+
+                    </div>
+
+                </div>
+        </footer>
+
+        <script src="proyecto.js"></script>
+        
+    </body>
+
+    
+
+</html>

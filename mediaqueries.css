@@ -1,0 +1,157 @@
+/* TABLET Y PANTALLAS MEDIANAS */
+@media screen and (max-width: 1200px) {
+    #desktop-nav { display: none; }
+    #hamburger-nav { display: flex; }
+
+    section {
+        height: auto;
+        min-height: 100vh;
+        padding: 60px 20px; 
+    }
+
+    #profile {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .title { font-size: 70px; }
+    .title__2 { font-size: 74px; }
+    
+    .section__pic-container {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    .projects-box {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}
+
+/* MÓVIL */
+@media screen and (max-width: 768px) {
+
+    h1 { font-size: 40px; }
+    
+    .title { font-size: 45px; }
+    .title__2 { font-size: 50px; }
+    
+    .section__text__p2 { font-size: 20px; }
+    .title__secciones { font-size: 40px; } 
+
+    .name-container {
+        flex-wrap: wrap; 
+    }
+
+    .about-containers {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .about-me, .about-me-EN {
+        padding: 10px;
+        font-size: 16px;
+        text-align: left; 
+    }
+
+    .stack table, .stack thead, .stack tbody, .stack th, .stack td, .stack tr {
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .stack thread tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    .stack tr { margin-bottom: 20px; }
+
+    .stack td {
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50%;
+        text-align: right;
+        padding: 10px;
+    }
+
+    .stack td:before {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+        font-family: 'PPEiko', sans-serif;
+    }
+
+    .stack td:nth-of-type(1):before { content: "Lenguajes"; }
+    .stack td:nth-of-type(2):before { content: "Diseño"; }
+    .stack td:nth-of-type(3):before { content: "IDEs"; }
+    .stack td:nth-of-type(4):before { content: "Sistemas"; }
+    .stack td:nth-of-type(5):before { content: "Productividad"; }
+
+
+    .projects-box {
+        grid-template-columns: 1fr; 
+    }
+
+    
+    .tabla-servicios, .tabla-servicios tbody, .tabla-servicios tr {
+        display: block;
+        width: 100%;
+    }
+
+    .tabla-servicios td {
+        display: block;
+        width: 100%; 
+        margin-bottom: 20px; 
+        box-sizing: border-box;
+    }
+
+    .columna-derecha, .columna-izquierda {
+        border-radius: 0px; 
+    }
+    
+    .stack-con { font-size: 35px; }
+
+
+    .carousel__slide figcaption {
+        width: 100%;
+        position: relative;
+        padding: 10px;
+    }
+    
+    .carousel__thumbnails li {
+        max-width: 50px; 
+    }
+}
+
+/* EXTRA SMALL */
+@media screen and (max-width: 480px) {
+    .section__pic-container { max-width: 140px; }
+    
+    .title { font-size: 38px; }
+    .title__2 { font-size: 42px; }
+
+    .btn { width: 100%; margin-bottom: 10px; }
+    
+    html, body {
+        overflow-x: hidden;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        padding-top: 50px; 
+        padding-bottom: 50px;
+    }
+}
