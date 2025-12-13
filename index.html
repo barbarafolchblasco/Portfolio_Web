@@ -2,159 +2,418 @@
 
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio personal</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio personal</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+    </head>
 
-<body>
+    <body>
 
-    <nav id="desktop-nav">
-        <div class="logo">[ Bàrbara Folch Blasco ]</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#aboutme">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-                <li><a href="#experience">Experiencia | Educación</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </div>
-    </nav>
-
-    <nav id="hamburger-nav">
-        <div class="logo">[ Bàrbara Folch Blasco ]</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+        <nav id ="desktop-nav">
+            <div class = "logo">[ Bàrbara Folch Blasco ]</div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#aboutme">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#experience">Experiencia | Educación</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
             </div>
-            <div class="menu-links">
-                <li><a href="#aboutme" onclick="toggleMenu()">Sobre mí</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+        </nav>
+
+        <nav id = "hamburger-nav">
+            <div class="logo">[ Bàrbara Folch Blasco ]</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span> 
+                    <span></span> 
+                </div>
+                <div class="menu-links">
+                    <li><a href="#aboutme" onclick="toggleMenu()">Sobre mí</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Proyectos</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experiencia</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contacto</a></li>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="separador_inicio"></div>
+        <div class="separador_inicio"></div>
 
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/FotoPerfilCV_1.png" alt="Bàrbara Folch Blasco foto perfil">
-        </div>
+        <section id="profile">
+            <div class="section__pic-container">
+                <img src="./assets/FotoPerfilCV_1.png" alt="Bàrbara Folch Blasco foto perfil"> 
+            </div>
+            <div class="section__text">
+                <p class="section__text__p1">Hello World! Soy</p>
+                
+                <div class="name-container">
+                    <h1 class="title">BÀRBARA</h1>
+                    <h1 class="title__2">FOLCH</h1>
+                </div>
+                
+                <p class="section__text__p2">Digital Designer & Fronted Developer</p>
+                
+                <div class="btn-container">
+                    <button class="btn btn-color-1" onclick="window.open('./assets/CV_BarbaraFolchBlasco.pdf')">Descargar CV</button>
+                    <a href="#contact" class="btn btn-color-2">Info Contacto</a>                
+                </div>
 
-        <div class="section__text">
-            <p class="section__text__p1">Hello World! Soy</p>
+                <br> <br> <br>
 
-            <div class="name-container">
-                <h1 class="title">BÀRBARA</h1>
-                <h1 class="title__2">FOLCH</h1>
             </div>
 
-            <p class="section__text__p2">Digital Designer & Fronted Developer</p>
+        </section>
 
-            <div class="btn-container">
-                <button class="btn btn-color-1" onclick="window.open('./assets/CV_BarbaraFolchBlasco.pdf')">Descargar
-                    CV</button>
-                <a href="#contact" class="btn btn-color-2">Info Contacto</a>
-            </div>
-        </div>
-    </section>
+        <section id="aboutme">
+            
+            <br> <br> <br> <br> 
+              
+            <p class="section__text__p1">ABOUT ME</p>
 
-    <section id="aboutme">
+            <h1 class="title__secciones">Sobre mí</h1>
 
-        <p class="section__text__p1">ABOUT ME</p>
-        <h1 class="title__secciones">Sobre mí</h1>
+            <div class="section-container">
 
-        <div class="section-container">
+                <div class="about-details-container">
 
-            <div class="about-details-container">
+                    <div class="about-containers">
 
-                <div class="about-containers">
+                        <div class="about-me">
 
-                    <div class="about-me">
+                            <p> [ ES ] Con una visión híbrida entre el diseño digital (UI/UX) y el desarrollo frontend, 
+                                me gusta moverme entre los aspectos creativos y técnicos, explorando cómo el diseño 
+                                y la programación pueden trabajar juntos para transformar ideas y necesidades en productos digitales funcionales, 
+                                accesibles y con personalidad, combinando creatividad, utilidad y código.
+                                <br><br>
+                                Actualmente, mientras continuo adquiriendo y perfecciondo conocimientos y habilidades de programación y desarrollo frontend, 
+                                disfruto aprendiendo y descubriendo cómo el diseño puede cobrar vida a través del código y convertirse en implementaciones reales. 
+                                También creo en los proyectos bien pensados, en los detalles que marcan la diferencia y en la colaboración entre perfiles creativos y técnicos.
+                                <br><br>
+                                ⚡ Dato curioso sobre mí: si no me encuentras diseñando y programando, me puedes encontrar entre libros y una taza de chai latte 📚☕️.
+                            </p>
 
-                        <p> [ ES ] Con una visión híbrida entre el diseño digital (UI/UX) y el desarrollo frontend,
-                            me gusta moverme entre los aspectos creativos y técnicos, explorando cómo el diseño
-                            y la programación pueden trabajar juntos para transformar ideas y necesidades en productos
-                            digitales funcionales,
-                            accesibles y con personalidad, combinando creatividad, utilidad y código.
-                            <br><br>
-                            Actualmente, mientras continuo adquiriendo y perfecciondo conocimientos y habilidades de
-                            programación y desarrollo frontend,
-                            disfruto aprendiendo y descubriendo cómo el diseño puede cobrar vida a través del código y
-                            convertirse en implementaciones reales.
-                            También creo en los proyectos bien pensados, en los detalles que marcan la diferencia y en
-                            la colaboración entre perfiles creativos y técnicos.
-                            <br><br>
-                            ⚡ Dato curioso sobre mí: si no me encuentras diseñando y programando, me puedes encontrar
-                            entre libros y una taza de chai latte 📚☕️.
-                        </p>
+                        </div>
+
+                        <div class="about-me-EN">
+
+                            <p>                         
+                                [ EN ] With a hybrid vision between digital design (UI/UX) and frontend development,
+                                I am passionate about moving between the creative and technical sides, exploring how design
+                                and programming can work together to transform ideas and needs into functional, accessible digital products 
+                                with personality, combining creativity, utility, and code.
+                                <br><br>
+                                Currently, while honing my programming and frontend development skills, I enjoy learning
+                                and discovering how design can come to life through code and become real implementations.
+                                I also believe in well-thought-out projects, in the details that make a difference, and in collaboration between creative and technical profiles.
+                                <br><br>
+                                ⚡ Fun fact: If you don't find me designing and programming, you can find me among books and a cup of chai latte 📚☕️.
+                            </p>
+
+                        </div>
+
+                        <div class="stack">
+
+                            <div class="stack-eco">
+
+                                <p>                         
+                                    ECOSISTEMA DIGITAL
+                                </p>
+
+                            </div>
+
+                            <br>
+
+                            <table>
+                                <thead>
+
+                                    <tr>
+                                        <th>🖥️ <br> Lenguajes <br>de programación</th>
+                                        <th>👩🏽‍💻 <br> Diseño gráfico <br> & Multimedia</th>
+                                        <th>🛠️ <br> IDEs</th>
+                                        <th>⚙️ <br> Sistemas</th>
+                                        <th>🧰 <br> Productividad</th>
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+
+                                    <tr>
+                                        <td>HTML<br>CSS<br>JavaScript<br>Java<br>XML</td>
+                                        <td>Adobe Photoshop<br>Adobe Illustrator<br>Adobe InDesign<br>Adobe After Effects<br>Adobe XD<br>Figma<br>Procreate</td>
+                                        <td>VS Code<br>Intelli J</td>
+                                        <td>MacOs<br>Windows<br>Linux</td>
+                                        <td>Microsoft 365<br>Notion</td>
+                                    </tr>
+    
+                                </tbody>
+
+                            </table>
+
+                        </div>
 
                     </div>
 
-                    <div class="about-me-EN">
+                </div>
 
-                        <p>
-                            [ EN ] With a hybrid vision between digital design (UI/UX) and frontend development,
-                            I am passionate about moving between the creative and technical sides, exploring how design
-                            and programming can work together to transform ideas and needs into functional, accessible
-                            digital products
-                            with personality, combining creativity, utility, and code.
+            </div>
+
+        </section>
+        
+        <div class="separador"></div>
+
+        <section class="projects" id="projects">
+            <p class="section__text__p1">PROJECTS</p>
+            <h1 class="title__secciones">Proyectos</h1>
+
+            <div class="projects-box">
+
+                <div class="project-card" data-gallery="1">
+                    <img src="./assets/Terra/1_Terra_BarbaraFolchBlasco.png" class="img-superpuesta" alt="Proyecto Terra"> 
+                    <h4>Terra</h4>
+                    <p>[  Diseño UI/UX  ]</p>
+                    <a class="btn_proyecto" href="proyectos/terra_proyecto.html">Ver proyecto</a>
+                </div>
+
+
+                <div class="project-card" data-gallery="2">
+                    <img src="./assets/Luggo/Luggo Screens.png" alt="Proyecto Luggo"> 
+                    <h4>Luggo</h4>
+                    <p>[  Diseño UI/UX  ]</p>
+                    <a class="btn_proyecto" href="proyectos/luggo_proyecto.html">Ver proyecto</a>
+                </div>
+
+                <div class="project-card" data-gallery="3">
+                    <img src="./assets/Piggy/1_Piggy_BarbaraFolchBlasco.png" alt="Proyecto1"> 
+                    <h4>Piggy</h4>
+                    <p>[  Diseño UI/UX  ]</p>
+                    <a class="btn_proyecto">Ver proyecto</a>
+                </div>
+
+                <div class="project-card" data-gallery="4">
+                    <img src="./assets/Kion/Web1_BarbaraFolchBlasco.png" alt="Proyecto1"> 
+                    <h4>Kion</h4>
+                    <p>[  Diseño UI/UX  ]</p>
+                    <a class="btn_proyecto">Ver proyecto</a>
+                </div>
+
+                <div class="project-card" data-gallery="5">
+                    <img src="./assets/Old Mauve/Web_Mockup_BarbaraFolchBlasco.png" alt="Proyecto1"> 
+                    <h4>Old Mauve</h4>
+                    <p>[  Diseño UI/UX  ]</p>
+                    <a class="btn_proyecto" href="proyectos/old_mauve_proyecto.html">Ver proyecto</a>
+                </div>
+
+                <div class="project-card" data-gallery="6">
+                    <img src="./assets/Director Club/Phone_BarbaraFolchBlasco.png" alt="Proyecto1"> 
+                    <h4>Type Directors Club</h4>
+                    <p>[  Diseño UI/UX  ]</p>
+                    <a class="btn_proyecto">Ver proyecto</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="separador"></div>
+
+        <section class="experience" id="experience">
+            
+            <p class="section__text__p1">EXPERIENCE | EDUCATION</p>
+
+            <h1 class="title__secciones">Experiencia | Educación</h1>
+
+            <br>
+
+            <div class="section-container">
+
+                <div class="about-details-container">
+
+                    <div class="about-containers">
+
+                        <div class="details-container">
+                        
+                            <h3>Experiencia Laboral</h3>
                             <br><br>
-                            Currently, while honing my programming and frontend development skills, I enjoy learning
-                            and discovering how design can come to life through code and become real implementations.
-                            I also believe in well-thought-out projects, in the details that make a difference, and in
-                            collaboration between creative and technical profiles.
-                            <br><br>
-                            ⚡ Fun fact: If you don't find me designing and programming, you can find me among books and
-                            a cup of chai latte 📚☕️.
-                        </p>
-
-                    </div>
-
-                    <div class="ecosistema">
-
-                        <div class="eco_title">
-
+                            <h4>— Etform Agencia</h4>
+                            <h5>Diseñadora de UI/UX y diseñadora gráfica</h5>
+                            <br>
+                            <p>Jornada completa · Mar. 2024 - Ago. 2025
+                            <br/>Almussafes, València</p>
+                            <br>
                             <p>
-                                ECOSISTEMA DIGITAL
+                                Diseño de interfaz de usuario y experiencia de usuario (UI/UX),
+                                packaging, diseño de elementos corporativos, identidad
+                                visual, branding de espacios, maquetación,
+                                manuales de marca, presentaciones, banners
+                                web, gestión y contenido para redes sociales,
+                                y preparación de artes finales.
+                            </p>
+
+                            <br><br>
+
+                            <h4>— Pixelarte Estudio</h4>
+                            <h5>Diseñadora gráfica</h5>
+                            <br>
+                            <p>Contrato de prácticas · Nov. 2023 - Mar. 2024
+                            <br/>València, València</p>
+                            <br>
+                            <p>
+                                Diseño de elementos corporativos, elementos
+                                para comunicación digital, maquetación,
+                                preparación de artes finales, contenido para
+                                redes sociales e ilustración.
+                            </p>
+
+                            <br><br>
+                            
+                            <h4>— Meteorito Estudio</h4>
+                            <h5>Diseñadora gráfica e ilustradora</h5>
+                            <br>
+                            <p>Contrato de prácticas · May. 2023 - Jul. 2023
+                            <br/>València, València</p>
+                            <br>
+                            <p>
+                                Elaboración de proyectos de packaging,
+                                branding, naming, ilustración y preparación
+                                de artes finales.
+                            </p>
+
+                            <br><br>
+                            
+                            <h4>— Ajuntament d'Almussafes</h4>
+                            <h5>Diseñadora gráfica e ilustradora</h5>
+                            <br>
+                            <p>Contrato de prácticas · Jul. 2020 - Ago. 2020
+                            <br/>Almussafes, València</p>
+                            <br>
+                            <p>
+                                Creación y diseño de carteles, banners
+                                informativos y diferentes contenidos para
+                                redes sociales.
                             </p>
 
                         </div>
 
                         <br>
 
-                        <table>
-                            <thead>
+                        <div class="details-container">
 
-                                <tr>
-                                    <th>🖥️ <br> Lenguajes <br>de programación</th>
-                                    <th>👩🏽‍💻 <br> Diseño gráfico <br> & Multimedia</th>
-                                    <th>🛠️ <br> IDEs</th>
-                                    <th>⚙️ <br> Sistemas</th>
-                                    <th>🧰 <br> Productividad</th>
-                                </tr>
+                            <h3>Educación Académica</h3>
+                            <br><br>
+                            
+                            <h4>— CFGS Desarrollo de Aplicaciones Web</h4>
+                            <h5>IES San Vicent Ferrer</h5>
+                            <br>
+                            <p>Sept. 2025 - Actualidad
+                            <br/>Algemesí, València</p>
 
-                            </thead>
+                            <br><br>
 
-                            <tbody>
+                            <h4>— Máster en Diseño e Ilustración</h4>
+                            <h5>Universitat Politècnica de València</h5>
+                            <br>
+                            <p>Sept. 2022 - Jul. 2023
+                            <br/>Facultat de Belles Arts de Sant Carles</p>
+                            
+                            <br><br>
+                            
+                            <h4>— Grado en Diseño y Tecnologías Creativas</h4>
+                            <h5>Universitat Politècnica de València</h5>
+                            <br>
+                            <p>Sept. 2018 - Jun. 2022
+                            <br/>Facultat de Belles Arts de Sant Carles</p>
 
-                                <tr>
-                                    <td>HTML<br>CSS<br>JavaScript<br>Java<br>XML</td>
-                                    <td>Adobe Photoshop<br>Adobe Illustrator<br>Adobe InDesign<br>Adobe After
-                                        Effects<br>Adobe XD<br>Figma<br>Procreate</td>
-                                    <td>VS Code<br>Intelli J</td>
-                                    <td>MacOs<br>Windows<br>Linux</td>
-                                    <td>Microsoft 365<br>Notion</td>
-                                </tr>
+                            <br><br>
+                            
+                            <h4>— Bachillerato Artístico</h4>
+                            <h5>IES Manuel Sanchís Guarner</h5>
+                            <br>
+                            <p>Sept. 2016 - Jun. 2018
+                            <br/>Silla, València</p>
 
-                            </tbody>
+                        </div>
+
+                        <br>
+
+                        <div class="details-container">
+
+                            <h3>Cursos</h3>
+                            
+                            <br><br>
+                            
+                            <h4>— Curso de Adobe After Effects</h4>
+                            <h5>CEI (Centro de Estudios de Innovación)</h5>
+                            <br>
+                            <p>Feb. 2025 - Mar. 2025
+                            <br/>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <div class="separador"></div>
+
+        <section class="contact" id="contact" >
+
+            <div class="contacto-wrapper">
+            
+                <p class="section__text__p1">GET IN TOUCH WITH ME</p>
+
+                <h1 class="title__secciones">Contacta conmigo</h1>
+
+                <div class="stack-contacto">
+
+                    <h3>¿Qué método prefieres?</h3>
+
+                    <br><br><br>
+
+                    <div class="stack-con">
+
+                        <table class="tabla-servicios">
+
+                            <tr>
+                                <td class="columna-izquierda">
+                                    <div class="contenido-servicio">
+                                        <br>
+                                            <div class="icono-servicio">✉️</div>
+                                            <div class="titulo-servicio">E-mail</div>
+                                            <p class="texto-columnas">Escríbeme directamente para propuestas, consultas <br> o cualquier idea que quieras compartir.</p>
+                                            <a href="mailto:folchblascobarbara@gmail.com" class="boton-servicio-1" style="text-decoration: none;">Enviar E-mail</a>
+                                            <div class="nota-email-container">
+                                                <p class="nota-email-info">Puedes copiar directamente la dirección si lo prefieres:</p>
+                                                <p class="nota-email">folchblascobarbara@gmail.com</p>
+                                            </div>
+                                            <br>
+                                     </div>
+                                </td>
+
+                                <td class="columna-derecha">
+                                    <div class="contenido-servicio">
+                                        <br>
+                                            <div class="icono-servicio">💬</div>
+                                            <div class="titulo-servicio">LinkedIn</div>
+                                            <p class="texto-columnas">Conecta conmigo profesionalmente
+                                            y envíame un mensaje directo por aquí para empezar a hablar.</p>
+                                            <a href="https://www.linkedin.com/in/barbarafolchblasco/" target="_blank" class="boton-servicio-2" style="text-decoration: none;">Mensaje LinkedIn</a>
+                                             <div class="nota-email-container">
+                                                <p class="nota-email-info">Puedes copiar directamente mi nombre de usuario si lo prefieres:</p>
+                                                <p class="nota-email">barbarafolchblasco</p>
+                                            </div>
+                                        <br>
+                                    </div>
+                                </td>
+                            </tr>
 
                         </table>
 
@@ -164,283 +423,27 @@
 
             </div>
 
-        </div>
+        </section>
 
-    </section>
+        <footer class="footer">
 
-    <div class="separador"></div>
+            <div class="footer-contenido">
 
-    <section id="projects" class="projects">
-        <p class="section__text__p1">PROJECTS</p>
-        <h1 class="title__secciones">Proyectos</h1>
+                <div class="footer-mensaje">
 
-        <div class="projects-box">
-            <div class="project-card" data-gallery="1">
-                <img src="./assets/Terra/1_Terra_BarbaraFolchBlasco.png" class="img-superpuesta" alt="Proyecto Terra">
-                <h4>Terra</h4>
-                <p>[ Diseño UI/UX ]</p>
-                <a class="btn_proyecto" href="proyectos/terra_proyecto.html">Ver proyecto</a>
-            </div>
-
-            <div class="project-card" data-gallery="2">
-                <img src="./assets/Luggo/Luggo Screens.png" alt="Proyecto Luggo">
-                <h4>Luggo</h4>
-                <p>[ Diseño UI/UX ]</p>
-                <a class="btn_proyecto" href="proyectos/luggo_proyecto.html">Ver proyecto</a>
-            </div>
-
-            <div class="project-card" data-gallery="3">
-                <img src="./assets/Piggy/1_Piggy_BarbaraFolchBlasco.png" alt="Proyecto1">
-                <h4>Piggy</h4>
-                <p>[ Diseño UI/UX ]</p>
-                <a class="btn_proyecto">Ver proyecto</a>
-            </div>
-
-            <div class="project-card" data-gallery="4">
-                <img src="./assets/Kion/Web1_BarbaraFolchBlasco.png" alt="Proyecto1">
-                <h4>Kion</h4>
-                <p>[ Diseño UI/UX ]</p>
-                <a class="btn_proyecto">Ver proyecto</a>
-            </div>
-
-            <div class="project-card" data-gallery="5">
-                <img src="./assets/Old Mauve/Web_Mockup_BarbaraFolchBlasco.png" alt="Proyecto1">
-                <h4>Old Mauve</h4>
-                <p>[ Diseño UI/UX ]</p>
-                <a class="btn_proyecto" href="proyectos/old_mauve_proyecto.html">Ver proyecto</a>
-            </div>
-
-            <div class="project-card" data-gallery="6">
-                <img src="./assets/Director Club/Phone_BarbaraFolchBlasco.png" alt="Proyecto1">
-                <h4>Type Directors Club</h4>
-                <p>[ Diseño UI/UX ]</p>
-                <a class="btn_proyecto">Ver proyecto</a>
-            </div>
-        </div>
-
-    </section>
-
-    <div class="separador"></div>
-
-    <section id="experience" class="experience">
-
-        <p class="section__text__p1">EXPERIENCE | EDUCATION</p>
-        <h1 class="title__secciones">Experiencia | Educación</h1>
-
-        <div class="section-container">
-
-            <div class="details-container">
-                <h3>Experiencia Laboral</h3>
-                <br><br>
-                <h4>— Etform Agencia</h4>
-                <h5>Diseñadora de UI/UX y diseñadora gráfica</h5>
-                <br>
-                <p>Jornada completa · Mar. 2024 - Ago. 2025
-                    <br />Almussafes, València
-                </p>
-                <br>
-                <p>
-                    Diseño de interfaz de usuario y experiencia de usuario (UI/UX),
-                    packaging, diseño de elementos corporativos, identidad
-                    visual, branding de espacios, maquetación,
-                    manuales de marca, presentaciones, banners
-                    web, gestión y contenido para redes sociales,
-                    y preparación de artes finales.
-                </p>
-
-                <br><br>
-
-                <h4>— Pixelarte Estudio</h4>
-                <h5>Diseñadora gráfica</h5>
-                <br>
-                <p>Contrato de prácticas · Nov. 2023 - Mar. 2024
-                    <br />València, València
-                </p>
-                <br>
-                <p>
-                    Diseño de elementos corporativos, elementos
-                    para comunicación digital, maquetación,
-                    preparación de artes finales, contenido para
-                    redes sociales e ilustración.
-                </p>
-
-                <br><br>
-
-                <h4>— Meteorito Estudio</h4>
-                <h5>Diseñadora gráfica e ilustradora</h5>
-                <br>
-                <p>Contrato de prácticas · May. 2023 - Jul. 2023
-                    <br />València, València
-                </p>
-                <br>
-                <p>
-                    Elaboración de proyectos de packaging,
-                    branding, naming, ilustración y preparación
-                    de artes finales.
-                </p>
-
-                <br><br>
-
-                <h4>— Ajuntament d'Almussafes</h4>
-                <h5>Diseñadora gráfica e ilustradora</h5>
-                <br>
-                <p>Contrato de prácticas · Jul. 2020 - Ago. 2020
-                    <br />Almussafes, València
-                </p>
-                <br>
-                <p>
-                    Creación y diseño de carteles, banners
-                    informativos y diferentes contenidos para
-                    redes sociales.
-                </p>
-
-            </div>
-
-            <br>
-
-            <div class="details-container">
-
-                <h3>Educación Académica</h3>
-                <br><br>
-
-                <h4>— CFGS Desarrollo de Aplicaciones Web</h4>
-                <h5>IES San Vicent Ferrer</h5>
-                <br>
-                <p>Sept. 2025 - Actualidad
-                    <br />Algemesí, València
-                </p>
-
-                <br><br>
-
-                <h4>— Máster en Diseño e Ilustración</h4>
-                <h5>Universitat Politècnica de València</h5>
-                <br>
-                <p>Sept. 2022 - Jul. 2023
-                    <br />Facultat de Belles Arts de Sant Carles
-                </p>
-
-                <br><br>
-
-                <h4>— Grado en Diseño y Tecnologías Creativas</h4>
-                <h5>Universitat Politècnica de València</h5>
-                <br>
-                <p>Sept. 2018 - Jun. 2022
-                    <br />Facultat de Belles Arts de Sant Carles
-                </p>
-
-                <br><br>
-
-                <h4>— Bachillerato Artístico</h4>
-                <h5>IES Manuel Sanchís Guarner</h5>
-                <br>
-                <p>Sept. 2016 - Jun. 2018
-                    <br />Silla, València
-                </p>
-
-            </div>
-
-            <br>
-
-            <div class="details-container">
-
-                <h3>Cursos</h3>
-
-                <br><br>
-
-                <h4>— Curso de Adobe After Effects</h4>
-                <h5>CEI (Centro de Estudios de Innovación)</h5>
-                <br>
-                <p>Feb. 2025 - Mar. 2025
-                    
-                <br />
-
-            </div>
-
-        </div>
-
-        </div>
-
-    </section>
-
-    <div class="separador"></div>
-
-    <section id="contact" class="contact">
-
-        <div class="contacto-wrapper">
-
-            <p class="section__text__p1">GET IN TOUCH WITH ME</p>
-            <h1 class="title__secciones">Contacta conmigo</h1>
-
-            <div class="stack-contacto">
-
-                <h3>¿Qué método prefieres?</h3>
-                <br><br><br>
-
-                <div class="stack-con">
-
-                    <table class="tabla-servicios">
-
-                        <tr>
-                            <td class="columna-izquierda">
-                                <div class="contenido-servicio">
-                                    <br>
-                                    <div class="icono-servicio">✉️</div>
-                                    <div class="titulo-servicio">E-mail</div>
-                                    <p class="texto-columnas">Escríbeme directamente para propuestas, consultas <br> o
-                                        cualquier idea que quieras compartir.</p>
-                                    <a href="mailto:folchblascobarbara@gmail.com" class="boton-servicio-1"
-                                        style="text-decoration: none;">Enviar E-mail</a>
-                                    <div class="nota-email-container">
-                                        <p class="nota-email-info">Puedes copiar directamente la dirección si lo
-                                            prefieres:</p>
-                                        <p class="nota-email">folchblascobarbara@gmail.com</p>
-                                    </div>
-                                    <br>
-                                </div>
-                            </td>
-
-                            <td class="columna-derecha">
-                                <div class="contenido-servicio">
-                                    <br>
-                                    <div class="icono-servicio">💬</div>
-                                    <div class="titulo-servicio">LinkedIn</div>
-                                    <p class="texto-columnas">Conecta conmigo profesionalmente
-                                        y envíame un mensaje directo por aquí para empezar a hablar.</p>
-                                    <a href="https://www.linkedin.com/in/barbarafolchblasco/" target="_blank"
-                                        class="boton-servicio-2" style="text-decoration: none;">Mensaje LinkedIn</a>
-                                    <div class="nota-email-container">
-                                        <p class="nota-email-info">Puedes copiar directamente mi nombre de usuario si lo
-                                            prefieres:</p>
-                                        <p class="nota-email">barbarafolchblasco</p>
-                                    </div>
-                                    <br>
-                                </div>
-                            </td>
-                        </tr>
-
-                    </table>
+                    <p>— Portfolio Web hecho con amor ❤️ — </p>
+                    <p>&copy; 2025 Bàrbara Folch Blasco. Todos los derechos reservados.</p>
 
                 </div>
 
             </div>
 
-        </div>
+        </footer> 
 
-    </section>
+        <div id="btn-top" onclick="scrollToTop()"> ↑ </div>
 
-    <footer class="footer">
-        <div class="footer-contenido">
+        <script src="script.js"></script>
 
-            <p>— Portfolio Web hecho con amor ❤️ —</p>
-            <p>&copy; 2025 Bàrbara Folch Blasco. Todos los derechos reservados.</p>
-
-        </div>
-    </footer>
-
-    <div id="btn-top" onclick="scrollToTop()"> ↑ </div>
-
-    <script src="script.js"></script>
-
-</body>
+    </body>
 
 </html>
