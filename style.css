@@ -83,10 +83,18 @@ h5{
 
 /* ----------------------SEPARADORES---------------------- */
 
+.separador_inicio {
+  border-bottom: 1px solid black;
+  width: 100%;
+  margin: 0; /* Importante: que la línea no empuje nada, el padding de la sección se encarga */
+  
+}
+
 .separador {
   border-bottom: 1px solid black;
   width: 100%;
   margin: 0; /* Importante: que la línea no empuje nada, el padding de la sección se encarga */
+  
 }
 
 
