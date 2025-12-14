@@ -669,41 +669,6 @@ h5 {
 }
 
 
-
-/* ==== FOOTER ==== */
-.footer {
-  background-color: black;
-  color: #fff;
-  font-family: "Inter", sans-serif;
-  padding: 40px 20px;
-  text-align: center;
-}
-
-.footer-contenido {
-  max-width: 1200px;
-  margin: 0 auto;
-  font-size: 16px;
-  font-weight: 300;
-  color: white;
-}
-
-.social-links {
-  margin-bottom: 15px;
-}
-
-.social-links a {
-  color: #fff;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: 500;
-}
-
-.social-links a:hover {
-  color: #566CCB; 
-}
-
-
-
 /* ==== BOTÓ TORNADA A DALT ==== */
 #btn-top {
   position: fixed;
@@ -1009,6 +974,40 @@ section {
 .title__proyectos {
   text-align: center;
   margin-bottom: 20px;
+}
+
+
+
+/* ==== FOOTER ==== */
+.footer {
+  background-color: black;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footer-contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+}
+
+.social-links {
+  margin-bottom: 15px;
+}
+
+.social-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.social-links a:hover {
+  color: #566CCB; 
 }
 
 
