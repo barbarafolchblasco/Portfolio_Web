@@ -1,12 +1,17 @@
-/* TABLET Y PANTALLAS MEDIANAS */
+/* ==== TABLET I PANTALLES MITJANES ==== */
 @media screen and (max-width: 1200px) {
-    #desktop-nav { display: none; }
-    #hamburger-nav { display: flex; }
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
 
     section {
         height: auto;
         min-height: 100vh;
-        padding: 60px 20px; 
+        padding: 60px 20px;
     }
 
     #profile {
@@ -17,9 +22,14 @@
         gap: 20px;
     }
 
-    .title { font-size: 70px; }
-    .title__2 { font-size: 74px; }
-    
+    .title {
+        font-size: 70px;
+    }
+
+    .title__2 {
+        font-size: 74px;
+    }
+
     .section__pic-container {
         max-width: 200px;
         margin-bottom: 20px;
@@ -31,19 +41,31 @@
     }
 }
 
-/* MÓVIL */
+/* ==== MÒBIL ==== */
 @media screen and (max-width: 768px) {
 
-    h1 { font-size: 40px; }
-    
-    .title { font-size: 45px; }
-    .title__2 { font-size: 50px; }
-    
-    .section__text__p2 { font-size: 20px; }
-    .title__secciones { font-size: 40px; } 
+    h1 {
+        font-size: 40px;
+    }
+
+    .title {
+        font-size: 45px;
+    }
+
+    .title__2 {
+        font-size: 50px;
+    }
+
+    .section__text__p2 {
+        font-size: 20px;
+    }
+
+    .title__secciones {
+        font-size: 40px;
+    }
 
     .name-container {
-        flex-wrap: wrap; 
+        flex-wrap: wrap;
     }
 
     .about-containers {
@@ -51,76 +73,119 @@
         margin: 20px auto;
     }
 
-    .about-me, .about-me-EN {
+    .about-me,
+    .about-me-EN {
         padding: 10px;
         font-size: 16px;
-        text-align: left; 
-    }
-
-    .stack table, .stack thead, .stack tbody, .stack th, .stack td, .stack tr {
-        display: block;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .stack thread tr {
-        position: absolute;
-        top: -9999px;
-        left: -9999px;
-    }
-
-    .stack tr { margin-bottom: 20px; }
-
-    .stack td {
-        border: none;
-        border-bottom: 1px solid #eee;
-        position: relative;
-        padding-left: 50%;
-        text-align: right;
-        padding: 10px;
-    }
-
-    .stack td:before {
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        width: 45%;
-        padding-right: 10px;
-        white-space: nowrap;
         text-align: left;
-        font-weight: bold;
-        font-family: 'PPEiko', sans-serif;
     }
 
-    .stack td:nth-of-type(1):before { content: "Lenguajes"; }
-    .stack td:nth-of-type(2):before { content: "Diseño"; }
-    .stack td:nth-of-type(3):before { content: "IDEs"; }
-    .stack td:nth-of-type(4):before { content: "Sistemas"; }
-    .stack td:nth-of-type(5):before { content: "Productividad"; }
+    /* -- Taula ecosistema -- */
+    @media screen and (max-width: 768px) {
+
+        .stack {
+            width: 100%;
+        }
+
+        .stack table,
+        .stack thead,
+        .stack tbody,
+        .stack tr,
+        .stack th,
+        .stack td {
+            display: block;
+            width: 100%;
+        }
+
+        .stack thead {
+            display: none;
+        }
+
+        .stack tr {
+            margin-bottom: 24px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .stack td {
+            border: none;
+            border-bottom: 1px solid black;
+            position: relative;
+            padding: 12px 10px 12px 50%;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .stack td:last-child {
+            border-bottom: none;
+        }
+
+        .stack td::before {
+            content: "";
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            width: 45%;
+            font-weight: 600;
+            white-space: nowrap;
+            text-align: left;
+            font-family: 'PPEiko', sans-serif;
+        }
+
+        .stack td:nth-of-type(1)::before {
+            content: "🖥️ Lenguajes";
+            font-size: 20px;
+        }
+
+        .stack td:nth-of-type(2)::before {
+            content: "👩🏽‍💻 Diseño gráfico";
+            font-size: 20px;
+        }
+
+        .stack td:nth-of-type(3)::before {
+            content: "🛠️ IDEs";
+            font-size: 20px;
+        }
+
+        .stack td:nth-of-type(4)::before {
+            content: "⚙️ Sistemas";
+            font-size: 20px;
+        }
+
+        .stack td:nth-of-type(5)::before {
+            content: "🧰 Productividad";
+            font-size: 20px;
+        }
+    }
 
 
+    /* -- Projectes -- */
     .projects-box {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr;
     }
 
-    
-    .tabla-servicios, .tabla-servicios tbody, .tabla-servicios tr {
+    .tabla-servicios,
+    .tabla-servicios tbody,
+    .tabla-servicios tr {
         display: block;
         width: 100%;
     }
 
     .tabla-servicios td {
         display: block;
-        width: 100%; 
-        margin-bottom: 20px; 
+        width: 100%;
+        margin-bottom: 20px;
         box-sizing: border-box;
     }
 
-    .columna-derecha, .columna-izquierda {
-        border-radius: 0px; 
+    .columna-derecha,
+    .columna-izquierda {
+        border-radius: 0px;
     }
-    
-    .stack-con { font-size: 35px; }
+
+    .stack-con {
+        font-size: 35px;
+    }
 
 
     .carousel__slide figcaption {
@@ -128,22 +193,33 @@
         position: relative;
         padding: 10px;
     }
-    
+
     .carousel__thumbnails li {
-        max-width: 50px; 
+        max-width: 50px;
     }
 }
 
-/* EXTRA SMALL */
+/* ==== EXTRA XICOTET ==== */
 @media screen and (max-width: 480px) {
-    .section__pic-container { max-width: 140px; }
-    
-    .title { font-size: 38px; }
-    .title__2 { font-size: 42px; }
+    .section__pic-container {
+        max-width: 140px;
+    }
 
-    .btn { width: 100%; margin-bottom: 10px; }
-    
-    html, body {
+    .title {
+        font-size: 38px;
+    }
+
+    .title__2 {
+        font-size: 42px;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    html,
+    body {
         overflow-x: hidden;
         width: 100%;
     }
@@ -151,7 +227,7 @@
 
 @media screen and (max-width: 768px) {
     section {
-        padding-top: 50px; 
+        padding-top: 50px;
         padding-bottom: 50px;
     }
 }

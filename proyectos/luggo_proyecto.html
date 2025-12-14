@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Proyecto Luggo</title>
+  <title>Proyecto Terra</title>
   
   <link rel="stylesheet" href="../style.css">
   <link rel="stylesheet" href="../mediaqueries.css">
@@ -13,6 +13,8 @@
     body {
         background-color: white !important;
         background-image: none !important;
+        /* ·· Cursor ·· */
+        cursor: none;
     }
 
     .title__proyectos {
@@ -22,12 +24,12 @@
 
     .texto-proyecto {
         text-align: center !important;
-        max-width: 800px;       
+        max-width: 800px;        
         margin: 0 auto !important;
         display: block;
         line-height: 1.2;
         font-size: 20px !important; 
-        padding-bottom: 50px;    
+        padding-bottom: 50px;      
     }
 
     .carousel_container {
@@ -35,12 +37,12 @@
         padding: 50px;           
         margin: 0 auto 50px auto; 
         max-width: 1150px;      
-        box-sizing: border-box;
+        box-sizing: border-box;  
     }
 
     @media screen and (max-width: 768px) {
         .carousel_container {
-            padding: 20px;   
+            padding: 20px;    
             border: none;     
         }
     }
@@ -73,6 +75,7 @@
                 [ Bàrbara Folch Blasco ]
             </a>
         </div>
+        
         <div class="hamburger-menu">
             <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -91,10 +94,9 @@
 
     <div class="separador"></div>
 
-    <section>
-            <br> <br> <br> <br> 
+    <section> <br> <br> 
 
-            <h1 class="title__proyectos">Luggo</h1>
+            <h1 class="title__proyectos">Terra</h1>
         
             <p class="texto-proyecto">
                 Terra es una aplicación diseñada para ofrecer diferentes productos
@@ -114,28 +116,41 @@
                         <li class="carousel__slide">
                             <figure>
                                 <div>
-                                    <img src="../assets/Luggo/Luggo Screens.png" alt="Pantallas Luggo">
+                                    <img src="../assets/Terra/Mockup 1.png" alt="">
                                 </div>
                                 <figcaption>
-                                    Pantallas principales de la <br>App Luggo.
+                                    Descripción de la imagen
                                     <span class="credit">Diseño UI/UX</span>
                                 </figcaption>
                             </figure>
                         </li>
 
-                    </ul>    
-
-                    <ul class="carousel__thumbnails">
-
-                        <li>
-                            <label for="slide-1"><img src="../assets/Luggo/Luggo Screens.png" alt=""></label>
+                        <li class="carousel__slide">
+                            <figure>
+                                <div>
+                                    <img src="../assets/Terra/Phones.jpg" alt="">
+                                </div>
+                                <figcaption>
+                                    Descripción de la imagen
+                                    <span class="credit">Diseño UI/UX</span>                            
+                                </figcaption>
+                            </figure>
                         </li>
                         
+                        </ul>    
+
+                    <ul class="carousel__thumbnails">
+                        <li>
+                            <label for="slide-1"><img src="../assets/Terra/Mockup 1.png" alt=""></label>
+                        </li>
+
+                        <li>
+                            <label for="slide-2"><img src="../assets/Terra/Phones.jpg" alt=""></label>
+                        </li>
                     </ul>
                 </div>
             </div>
     </section>
-
 
     <br> <br> <br> <br> 
 
@@ -149,6 +164,8 @@
     </footer>
 
     <script src="../script.js"></script>
+
+    <div class="custom-cursor"></div>
     
 </body>
 </html>

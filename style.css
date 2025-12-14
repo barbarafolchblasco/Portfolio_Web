@@ -63,17 +63,16 @@ h1 {
   font-family: 'PPEiko', sans-serif;
   font-size: 80px;
   text-align: center;
-  margin-bottom: 40px;
   font-weight: 550;
 }
 
 .section__text__p1,
 .section__subtitle {
+  margin-top: 40px;
+  margin-bottom: -5px;
   font-weight: 350;
   font-size: 25px;
   text-align: center;
-  margin-bottom: 10px;
-  letter-spacing: 2px;
 }
 
 /* ·· Subtítols encapsulats ·· */
@@ -85,19 +84,7 @@ h3 {
   font-size: 20px;
   display: inline-block;
   padding: 10px 16px;
-  margin-bottom: 20px;
-
-}
-
-h4 {
-  font-family: 'PPEiko', sans-serif;
-  font-weight: 550;
-  font-size: 35px;
-}
-
-h5 {
-  font-weight: 400;
-  font-size: 20px;
+  margin-bottom: 10px;
 
 }
 
@@ -222,7 +209,6 @@ a:hover {
 
 
 /* ==== MENÚ HAMBURGUESA (RESPONSIVE) ==== */
-
 #hamburger-nav {
   display: none;
 }
@@ -314,9 +300,7 @@ a:hover {
 
 
 
-
-
-/* ==== SECCIONS ==== */
+/* ==== SECCIONS ESTRUCTURA GENERAL ==== */
 section {
   min-height: 100vh;
   margin: 0 auto;
@@ -339,8 +323,7 @@ section {
 
 
 
-/* ----------------------Sección PERFIL----------------------*/
-
+/* -- Perfil/Home -- */
 #profile {
   display: flex;
   flex-direction: column;
@@ -407,12 +390,9 @@ section {
 .name-container {
   display: flex;
   gap: 10px;
-  /* Espacio entre BÀRBARA y FOLCH */
   align-items: baseline;
-  /* Alinea los textos en la misma línea */
   justify-content: center;
 }
-
 
 #socials-container {
   display: flex;
@@ -422,23 +402,13 @@ section {
 }
 
 
-
-
-
-
-
-
-/* ----------------------SECCIÓN SOBRE MI----------------------*/
-
+/* -- About me -- */
 .about-containers {
-
   width: 80%;
   max-width: 1200px;
   margin: 60px auto;
-  margin-top: 5px;
-  /* sobrescribe el margen superior */
+  margin-top: 0px;
   justify-content: center;
-
 }
 
 .about-me {
@@ -456,20 +426,14 @@ section {
   font-weight: 250;
 }
 
-
 .details-container {
   padding: 40px;
   text-align: justify;
 }
 
 
-
-
-
-/* ----------------------SECCIÓN ECOSISTEMA---------------------- */
-
+/* -- Ecosistema digital -- */
 .stack {
-  padding: 40px;
   text-align: center;
   font-size: 25px;
   font-weight: 400;
@@ -478,14 +442,12 @@ section {
 .stack-eco {
   font-family: 'PPEiko', sans-serif;
   font-size: 30px;
-
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
-
 }
 
 th {
@@ -495,6 +457,8 @@ th {
   text-align: center;
   font-weight: 550;
   font-size: 22px;
+  color: black;
+  background-color: white;
 }
 
 td {
@@ -506,21 +470,12 @@ td {
   font-weight: 350;
 }
 
-th {
-  background-color: white;
-  color: black;
-
-}
 
 
-
-
-
-/* ----------------------PROYECTOS---------------------- */
-
+/* -- Projectes -- */
 .projects {
   background-color: white;
-  padding: 2rem;
+  padding-bottom: 3rem;
 }
 
 .projects-box {
@@ -547,7 +502,6 @@ th {
   width: 100%;
 
   object-fit: cover;
-  /* máscara */
   object-position: center;
 }
 
@@ -580,13 +534,24 @@ th {
 }
 
 
+/* -- Experiència -- */
+.about-containers {
+  justify-content: center;
+}
+
+h4 {
+  font-family: 'PPEiko', sans-serif;
+  font-weight: 550;
+  font-size: 35px;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 20px;
+}
 
 
-
-
-
-/* ----------------------TABLA CONTACTO---------------------- */
-
+/* -- Tabla contacte -- */
 #contact {
   background-color: transparent;
 }
@@ -722,8 +687,6 @@ th {
 
 
 
-
-
 /* ==== PÀGINES PROJECTES ==== */
 @mixin aspect-ratio($width, $height) {
 
@@ -749,22 +712,18 @@ th {
 
 
 
-/*----Styling----*/
-
+/*----Styling pàgines ----*/
 section {
   background: white;
-  padding: 20px 10px;
+  padding: 0px 10px;
   align-items: center;
 }
-
 
 .carousel_container {
   max-width: 1044px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
-
 
 .carousel {
   display: block;
@@ -835,7 +794,6 @@ section {
   }
 }
 
-
 .carousel__slides {
   position: relative;
   z-index: 1;
@@ -846,7 +804,6 @@ section {
   box-sizing: border-box;
   display: flex;
 }
-
 
 .carousel__slide {
   position: relative;
@@ -860,25 +817,21 @@ section {
   box-sizing: border-box;
   white-space: normal;
 
-
   figure {
     display: flex;
     margin: 0;
   }
-
 
   div {
     @include aspect-ratio(3, 2);
     width: 100%;
   }
 
-
   img {
     display: block;
     flex: 1 1 auto;
     object-fit: cover;
   }
-
 
   figcaption {
     align-self: flex-end;
@@ -888,27 +841,22 @@ section {
     min-width: 150px;
   }
 
-
   .credit {
     margin-top: 1rem;
     color: rgba(0, 0, 0, 0.5);
     display: block;
   }
 
-
   &.scrollable {
     overflow-y: scroll;
   }
-
 }
 
 .carousel__thumbnails {
-
   list-style: none;
   padding: 0;
   margin: 0;
   display: flex;
-
   margin: 0 -10px;
 
   .carousel__slides+& {
@@ -937,10 +885,8 @@ section {
         box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.25);
         transition: all 300ms ease-in-out;
       }
-
     }
   }
-
 
   img {
     display: block;
