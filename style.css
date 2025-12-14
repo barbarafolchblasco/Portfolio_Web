@@ -980,19 +980,20 @@ section {
 
 /* ==== FOOTER ==== */
 .footer {
-  background-color: black;
+
   color: #fff;
   font-family: "Inter", sans-serif;
   padding: 40px 20px;
   text-align: center;
+  background-color: black;
 }
 
 .footer-contenido {
+  color: white;
   max-width: 1200px;
   margin: 0 auto;
   font-size: 16px;
   font-weight: 300;
-  color: white;
 }
 
 .social-links {
