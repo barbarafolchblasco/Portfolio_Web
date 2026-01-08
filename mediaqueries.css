@@ -41,46 +41,74 @@
     }
 }
 
+
+
 /* ==== MÒBIL ==== */
 @media screen and (max-width: 768px) {
 
-    h1 {
-        font-size: 40px;
-    }
+    .custom-cursor {
+    display: none;
+  }
 
-    .title {
-        font-size: 45px;
-    }
+  /* Imagen protagonista */
+  .section__pic-container {
+    margin-top: 60px;
+    max-width: 250px;
+    margin-bottom: 5px;
+  }
 
-    .title__2 {
-        font-size: 50px;
-    }
+  /* Nombre en dos líneas */
+  .name-container {
+    flex-direction: column;
+    gap: 0;
+    line-height: 1;
+    align-items: center;
+    text-align: center;
+  }
 
-    .section__text__p2 {
-        font-size: 20px;
-    }
+  /* Espaciado Hello World */
+  .section__text__p1 {
+    margin-bottom: 24px;
+  }
 
-    .title__secciones {
-        font-size: 40px;
-    }
+  /* Tipografía optimizada móvil */
+  .title {
+    font-size: 64px;
+    letter-spacing: 1px;
+  }
 
-    .name-container {
-        flex-wrap: wrap;
-    }
+  .title__2 {
+    font-size: 68px;
+  }
 
-    .about-containers {
-        width: 100%;
-        margin: 20px auto;
-    }
+  .section__text__p2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
 
-    .about-me,
-    .about-me-EN {
-        padding: 10px;
-        font-size: 16px;
-        text-align: left;
-    }
+  /* Botones más compactos */
+  .btn {
+    margin-top: 20px;
+    width: 150px;
+    font-size: 15px;
+    padding: 10px 14px;
+  }
 
-    /* -- Taula ecosistema -- */
+  .btn-container {
+    gap: 8px;
+  }
+
+  /* Mejor uso del viewport */
+  #profile {
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    gap: 20px;
+  }
+
+
+
+  /* -- Taula ecosistema -- */
     @media screen and (max-width: 768px) {
 
         .stack {
@@ -134,27 +162,27 @@
 
         .stack td:nth-of-type(1)::before {
             content: "🖥️ Lenguajes";
-            font-size: 20px;
+            font-size: 17px;
         }
 
         .stack td:nth-of-type(2)::before {
             content: "👩🏽‍💻 Diseño gráfico";
-            font-size: 20px;
+            font-size: 17px;
         }
 
         .stack td:nth-of-type(3)::before {
             content: "🛠️ IDEs";
-            font-size: 20px;
+            font-size: 17px;
         }
 
         .stack td:nth-of-type(4)::before {
             content: "⚙️ Sistemas";
-            font-size: 20px;
+            font-size: 17px;
         }
 
         .stack td:nth-of-type(5)::before {
             content: "🧰 Productividad";
-            font-size: 20px;
+            font-size: 17px;
         }
     }
 
@@ -197,37 +225,8 @@
     .carousel__thumbnails li {
         max-width: 50px;
     }
+
 }
 
-/* ==== EXTRA XICOTET ==== */
-@media screen and (max-width: 480px) {
-    .section__pic-container {
-        max-width: 140px;
-    }
 
-    .title {
-        font-size: 38px;
-    }
 
-    .title__2 {
-        font-size: 42px;
-    }
-
-    .btn {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    html,
-    body {
-        overflow-x: hidden;
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    section {
-        padding-top: 50px;
-        padding-bottom: 50px;
-    }
-}

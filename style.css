@@ -935,6 +935,9 @@ html, body, * {
 
 
 
+
+
+
 /* ==== FOOTER ==== */
 .footer {
   color: #fff;
@@ -974,4 +977,24 @@ footer a {
 
 footer a:hover {
     color: #566CCB;
+}
+
+
+
+/* ==== CURSOR INVERTIDO ==== */
+
+.custom-cursor {
+  transition: background 0.2s ease, border 0.2s ease;
+}
+
+.custom-cursor.invert {
+  background: white;
+  border: 1px solid black;
+}
+
+/* Desactivar cursor custom en móvil */
+@media (max-width: 768px) {
+  .custom-cursor {
+    display: none;
+  }
 }

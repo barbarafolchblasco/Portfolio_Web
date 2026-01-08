@@ -40,6 +40,16 @@ function scrollToTop() {
 
 
 
+/* ==== CURSOR - DETECCIÓN DE ELEMENTOS OSCUROS ==== */
 
+const darkElements = document.querySelectorAll('.cursor-dark');
 
+darkElements.forEach(el => {
+  el.addEventListener('mouseenter', () => {
+    cursor.classList.add('invert');
+  });
 
+  el.addEventListener('mouseleave', () => {
+    cursor.classList.remove('invert');
+  });
+});
